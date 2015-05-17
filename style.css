@@ -22,6 +22,7 @@ html, body {
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: justify;
+  padding: 0px;
 }
 
 h2 {
@@ -107,11 +108,6 @@ ul.dash li {
   margin-bottom: 150px;
 }
 
-.navbar-container {
-  padding-right: 100px;
-  padding-left: 50px;
-}
-
 .section {
   padding: 10px 15px;
 }
@@ -170,14 +166,44 @@ ul.dash li {
   padding: 10px 15px;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 767px) {
   .row {
     margin-left: -15px;
+  }
+
+  .main-row {
+    padding: 10px;
+  }
+
+  .navbar-container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+  .main-row {
+    padding: 0px 50px;
+  }
+
+  .navbar-container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-row {
+    padding: 0px 100px;
+  }
+
+  .navbar-container {
+    padding-right: 100px;
+    padding-left: 50px;
   }
 }
 
 .main-row {
-  padding: 0px 100px;
   margin-bottom: 50px;
 }
 
