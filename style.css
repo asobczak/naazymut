@@ -1,0 +1,186 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-responsive.css');
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: justify;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size:20px;
+  color: #808080;
+  font-weight: bold;
+}
+
+p, li, body {
+  font-size: 15px;
+  color: #808080;
+}
+p.menu {
+  font-size: 25px;
+  color: black;
+  margin-left:14px;
+}
+
+a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.szeroki-obrazek {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tytul {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 50px
+}
+
+div.data {
+  margin-top: 20px;
+}
+
+p.data {
+  font-size: 10px;
+  color: #808080;
+}
+
+p.copyright {
+  font-size: 10px;
+  color: #808080;
+  text-align: center;
+  margin-top: 20px;
+}
+.plaza {
+  margin-bottom: 20px;
+  }
+
+.mapa {
+  height: 400px;
+  width: 100%;
+}
+
+ul.dash {
+  list-style: none;
+}
+
+ul.dash li:before {
+  content:"-";
+  position:relative;
+  left:-5px;
+}
+
+ul.dash li {
+  text-indent:-5px;
+}
+
+.parallax-window-container, .adamrob_parallax {
+  margin-left: -1500px;
+  margin-right: -1500px;
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.navbar-container {
+  padding-right: 100px;
+  padding-left: 50px;
+}
+
+.section {
+  padding: 10px 15px;
+}
+
+.content {
+  border: 1px solid rgb(200,200,200);
+}
+
+.image-container {
+  background-position: 50%;
+  background-size: cover;
+  height: 145px;
+}
+
+.text-container {
+  padding: 15px;
+  overflow: hidden;
+}
+
+.more {
+  padding: 0px 15px;
+}
+
+.small-section {
+  height: 250px;
+}
+
+.big-section {
+  height: 520px
+}
+
+.big-section .image-container {
+  height: 300px;
+}
+
+.small-section h2 {
+  font-size: 16px;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+
+.big-section h2 {
+  margin-top: 10px;
+}
+
+.small-section p {
+  font-size: 13px;
+}
+
+.big-section .text-container {
+  height: 188px;
+}
+
+.small-section .text-container {
+  height: 75px;
+  padding: 10px 15px;
+}
+
+@media (min-width: 1200px) {
+  .row {
+    margin-left: -15px;
+  }
+}
+
+.main-row {
+  padding: 0px 100px;
+  margin-bottom: 50px;
+}
+
+.scrolloff {
+  pointer-events: none;
+}
