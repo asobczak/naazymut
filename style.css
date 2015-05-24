@@ -215,3 +215,12 @@ ul.dash li {
 .scrolloff {
   pointer-events: none;
 }
+
+.related h3 {
+  margin-top: 90px;
+  margin-bottom: 15px;
+}
+
+textarea#comment {
+  width: 100%
+}
