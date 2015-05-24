@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Garamond;
   text-align: justify;
   padding: 0px;
 }
@@ -37,7 +37,7 @@ h3 {
 }
 
 p, li, body {
-  font-size: 15px;
+  font-size: 16px;
   color: #808080;
 }
 p.menu {
@@ -48,7 +48,8 @@ p.menu {
 
 a {
   text-decoration: none;
-  color: #808080;
+  color: rgb(192,0,0);
+  font-weight: bold;
 }
 
 .szeroki-obrazek {
@@ -143,6 +144,10 @@ ul.dash li {
   height: 300px;
 }
 
+.content h2 {
+  color: #808080;
+}
+
 .small-section h2 {
   font-size: 16px;
   margin-top: 3px;
@@ -154,7 +159,7 @@ ul.dash li {
 }
 
 .small-section p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .big-section .text-container {
