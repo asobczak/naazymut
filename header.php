@@ -11,6 +11,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
     <?php wp_enqueue_script("jquery"); ?>
     <?php wp_head(); ?>
   </head>
