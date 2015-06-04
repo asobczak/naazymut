@@ -13,6 +13,13 @@
     <?php endif; ?>
   </div>
 </div>
+    
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 facebook-like">
+    <?php echo apply_filters( 'facebook_like', ' ' ); ?>
+  </div>
+</div>
+
 
 <?php
   function tag_names($tags) {
@@ -24,8 +31,8 @@
 ?>
 
 <div class="row related main-row">
-  <div class='col-md-4 col-md-offset-4'>
-    <h3>Więcej w postów tematyce: <?php echo tag_names(wp_get_post_tags($post->ID)); ?> </h3>
+  <div class='col-md-6 col-md-offset-3'>
+    <h3>Więcej o: <?php echo tag_names(wp_get_post_tags($post->ID)); ?> </h3>
   </div>
 </div>
 
