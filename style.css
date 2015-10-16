@@ -13,8 +13,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
 */
 
-@import url('bootstrap/css/bootstrap.css');
-@import url('bootstrap/css/bootstrap-responsive.css');
 html, body {
   overflow-x: hidden;
 }
@@ -109,6 +107,34 @@ ul.dash li {
   margin-bottom: 150px;
 }
 
+.parallax_section {
+  background-size: cover;
+  background-position: center;
+}
+
+.mobile_parallax {
+  margin: 20px -15px 50px -10px;
+}
+
+/* tablet / phone */
+@media (max-width: 1200px)  and (orientation: portrait) {
+  .parallax_section_panoramic {
+    height: 35%;
+  }
+
+  .parallax_section_non_panoramic {
+    height: 50%;
+  }
+}
+
+/* tablet / phone */
+@media (max-width: 1200px)  and (orientation: landscape) {
+  .parallax_section_non_panoramic {
+    height: 95%;
+  }
+}
+
+
 .section {
   padding: 10px 15px;
 }
@@ -173,7 +199,8 @@ ul.dash li {
 
 @media (max-width: 767px) {
   .row {
-    margin-left: -15px;
+    margin-left: -5px;
+    margin-right: -5px;
   }
 
   .main-row {
@@ -217,14 +244,23 @@ ul.dash li {
 }
 
 .related h3 {
-  margin-top: 60px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
+.az_centered {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  width: initial;
+  display: table;
+}
+
 .facebook-like {
+  margin-bottom: 30px;
   margin-top: 10px;
 }
 
 textarea#comment {
-  width: 100%
+  width: 100%;
 }

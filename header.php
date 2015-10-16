@@ -3,18 +3,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Le styles -->
-    <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
-
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href='http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-
     <?php wp_enqueue_script("jquery"); ?>
+
+    <?php wp_enqueue_style("bootstrap", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"); ?>
+    <?php wp_enqueue_style("font", 'http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext'); ?>
+    <?php wp_enqueue_style('main', get_template_directory_uri() . '/style.css?v='.time(), array("bootstrap", "font")); ?> 
+    
     <?php wp_head(); ?>
+    <title><?php wp_title('|', true, 'right'); ?></title>
   </head>
   <body>
 
