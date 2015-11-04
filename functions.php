@@ -11,11 +11,12 @@ function wpbootstrap_scripts_with_jquery()
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
-add_action( 'init', 'register_nav_menu' );
 
-function register_my_menu() {
-  register_my_menu( 'my-menu', __( 'Navigation Menu' ) );
+function register_main_menu() {
+  register_nav_menu( 'main-menu', __( 'Main Menu' ) );
 }
+
+add_action( 'init', 'register_main_menu' );
 
 require_once('wp_bootstrap_navwalker.php');
 

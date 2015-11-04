@@ -34,8 +34,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <?php
             wp_nav_menu( array(
-              'menu' => 'my-menu',
-              'depth' => 2,
+              'theme_location' => 'main-menu',
+	      'depth' => 2,
               'container' => false,
               'menu_class' => 'nav navbar-nav navbar-right',
               'walker' => new wp_bootstrap_navwalker()
