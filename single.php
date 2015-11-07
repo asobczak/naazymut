@@ -44,7 +44,7 @@
 
 <div class="row related main-row">
   <div class='col-md-6 col-md-offset-3 az_centered'>
-    <h3>Więcej o: <?php echo tag_names(wp_get_post_tags($post->ID)); ?> </h3>
+    <h3><?php pll_e('More about:'); ?> <?php echo tag_names(wp_get_post_tags($post->ID)); ?> </h3>
   </div>
 </div>
 
@@ -89,7 +89,7 @@
             <p>{$teaser}</p>
           </div>
           <div class='more pull-right'>
-            <a href='".get_the_permalink()."'>Więcej...</a>
+            <a href='".get_the_permalink()."'>".pll__('More')."...</a>
           </div>";
 
       $post_s = "<div class='col-md-4 col-sm-4 section'>

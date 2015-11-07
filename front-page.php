@@ -26,7 +26,7 @@
         <p>{$teaser}</p>
       </div>
       <div class='more pull-right'>
-        <a href='".get_the_permalink()."'>Więcej...</a>
+        <a href='".get_the_permalink()."'>".pll__('More')."...</a>
       </div>";
 
   if($count == 1) {

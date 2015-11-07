@@ -66,4 +66,8 @@ function shape_widgets_init() {
 }
 add_action( 'widgets_init', 'shape_widgets_init' );
 
+// TRANSLATIONS
+pll_register_string('wpbootstrap', 'More about:');
+pll_register_string('wpbootstrap', 'More');
+
 ?>
