@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="6jrH5SaYYSCRbsDJsq8f2ea4WlzVEf9qBkYilu_bcF4" />
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -28,7 +29,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo get_site_url(); ?>">Na azymut</a>
+            <?php if ( get_theme_mod( 'naazymut_logo' ) ) : ?>
+              <div class='site-logo'>
+                <a class="navbar-brand" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'naazymut_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+              </div>
+            <?php else : ?>
+              <a class="navbar-brand" href="<?php echo get_site_url(); ?>">Na azymut</a>
+            <?php endif; ?>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,5 +52,3 @@
         </div>
       </div>
     </nav>
-
-  <div class="container-fluid">

@@ -18,6 +18,17 @@ function register_main_menu() {
 
 add_action( 'init', 'register_main_menu' );
 
+function localize_disqus() {
+  $two_letter_lang = explode("_", get_locale())[0];
+
+  echo "<script>
+    window.disqus_config = function () {
+        this.language = '".$two_letter_lang."'
+    };
+  </script>";
+}
+add_action( 'wp_enqueue_scripts', 'localize_disqus' );
+
 require_once('wp_bootstrap_navwalker.php');
 
 /**
@@ -66,8 +77,25 @@ function shape_widgets_init() {
 }
 add_action( 'widgets_init', 'shape_widgets_init' );
 
+function naazymut_logo_customizer( $wp_customize ) {
+	$wp_customize->add_section( 'naazymut_logo_section' , array(
+		'title'       => __( 'Logo', 'naazymut' ),
+		'priority'    => 30,
+		'description' => 'Upload a logo to replace the default site name and description in the header',
+	) );
+
+	$wp_customize->add_setting( 'naazymut_logo' );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'naazymut_logo', array(
+		'label'    => __( 'Logo', 'naazymut' ),
+		'section'  => 'naazymut_logo_section',
+		'settings' => 'naazymut_logo',
+	) ) );
+}
+add_action( 'customize_register', 'naazymut_logo_customizer' );
+
 // TRANSLATIONS
-pll_register_string('wpbootstrap', 'More about:');
 pll_register_string('wpbootstrap', 'More');
+pll_register_string('wpbootstrap', 'Contact me');
 
 ?>

@@ -23,7 +23,7 @@
         <div class="col-md-5">
             <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0]; ?>
             <div class='portret' style='background-image: url("<?php echo $image ?>");'></div>
-            <div class="text-center" style="padding-top: 10px">Napisz do mnie:<br>ania@naazymut.pl</div>
+            <div class="text-center" style="padding-top: 10px"><?php pll_e('Contact me'); ?>:<br>ania@naazymut.pl</div>
         </div>
     </div>
 

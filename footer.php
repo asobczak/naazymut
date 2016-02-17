@@ -1,8 +1,6 @@
         <footer>
-            <p class="copyright">Copyritght by Ania Sobczak</p>
+            <p class="copyright">Copyritght by Ania Sobczak, photos by Szymon Sobczak.</p>
         </footer>
-
-    </div> <!-- /container -->
 
     <?php wp_footer(); ?>
 
