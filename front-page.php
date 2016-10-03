@@ -30,7 +30,7 @@
         <p>{$teaser}</p>
       </div>
       <div class='more pull-right'>
-        <a href='".get_the_permalink()."'>".pll__('More')."...</a>
+        <a href='".get_the_permalink()."'>".pll__('More...')."</a>
       </div>";
 
         if($count == 1) {
@@ -61,5 +61,9 @@
 <?php endif; ?>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<hr>
+
+<p class="text-center" style="font-size: 14;margin-top: 20px">Partnerzy: <a title="Katalog-blogow.pl - Katalog Blogów Polskiej Blogosfery" href="http://katalog-blogow.pl/" target="_blank" data-wpel-link="internal">Katalog-Blogow.pl</a></p>
 
 <?php get_footer(); ?>

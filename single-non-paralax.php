@@ -1,7 +1,13 @@
-<?php get_header(); ?>
+<?php 
+/**
+* WP Post Template: Post bez Paralaxa
+*/
+
+get_header(); 
+?>
 
 <div class="row">
-  <div class="main-body col-md-6 col-md-offset-3">
+  <div class="col-md-6 col-md-offset-3 bez-paralaxa">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <h1><?php the_title(); ?></h1>
       <p><em><?php the_date(); ?></em></p>
@@ -14,7 +20,7 @@
   </div>
 </div>
     
-<div class="row supl-widget-area">
+<div class="row">
   <div class='col-md-12'>
     <?php if ( is_active_sidebar( 'footer' ) ) : ?>
      <div id="tertiary" class="widget-area" role="supplementary">

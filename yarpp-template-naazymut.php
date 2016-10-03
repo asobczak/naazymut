@@ -6,7 +6,7 @@ Author: ssobczak
 */
 
 if (function_exists("icl_register_string")) {
-        icl_register_string("YARPP", "related posts", "Read more about:");
+        icl_register_string("YARPP", "related posts", "Read more!");
         icl_register_string("YARPP", "read more", "More...");
         icl_register_string("YARPP", "no related posts message", "No related posts.");
 }
@@ -20,11 +20,11 @@ if (function_exists("icl_register_string")) {
 
 ?>
 
+<div class='row'><div class='col-md-10 col-md-offset-1'>
 <div class="row related">
   <div class='col-md-6 col-md-offset-3 az_centered'>
     <h3><?php 
-      echo (function_exists("icl_t") ? icl_t("YARPP", "related posts", "Read more about:") : "Read more about:");
-      echo ' '.tag_names(wp_get_post_tags($post->ID)); 
+      echo (function_exists("icl_t") ? icl_t("YARPP", "related posts", "Read more!") : "Read more!");
     ?></h3>
   </div>
 </div>
@@ -35,7 +35,7 @@ if (function_exists("icl_register_string")) {
 
       <?php 
         $teaser = substr(get_the_content('', true), 0, 700);
-        $img_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'medium')[0];
+        $img_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large')[0];
       ?>
 
       <div class='col-md-4 col-sm-4 section'>
@@ -55,4 +55,7 @@ if (function_exists("icl_register_string")) {
 <?php else: ?>
   <p><?php echo (function_exists("icl_t") ? icl_t("YARPP", "no related posts message", "No related posts.") : "No related posts.") ?></p>
 <?php endif; ?>
+
+</div>
+</div>
 

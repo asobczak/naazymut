@@ -12,7 +12,7 @@
     <?php wp_enqueue_script("jquery"); ?>
 
     <?php wp_enqueue_style("bootstrap", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"); ?>
-    <?php wp_enqueue_style("font", 'http://fonts.googleapis.com/css?family=EB+Garamond&subset=latin,latin-ext'); ?>
+    <?php wp_enqueue_style("font", "https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext"); ?>
     <?php wp_enqueue_style('main', get_template_directory_uri() . '/style.css?v='.time(), array("bootstrap", "font")); ?> 
     
     <?php wp_head(); ?>
@@ -20,7 +20,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-naazymut">
+    <nav class="navbar navbar-default navbar-naazymut navbar-fixed-top">
       <div class="container-fluid navbar-container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -29,13 +29,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <?php if ( get_theme_mod( 'naazymut_logo' ) ) : ?>
               <div class='site-logo'>
-                <a class="navbar-brand" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'naazymut_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
+                <a class="navbar-brand" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
+			<img src='<?php echo bloginfo('stylesheet_directory'); ?>/images/napis_coralnotes.png' class='napis_naazymut' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
+                </a>
               </div>
-            <?php else : ?>
-              <a class="navbar-brand" href="<?php echo get_site_url(); ?>">Na azymut</a>
-            <?php endif; ?>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
