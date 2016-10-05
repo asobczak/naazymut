@@ -8,13 +8,18 @@
         height: 513px;
         display: inline-block;
         background-size: contain;
-	background-position: 50%;
+	    background-position: 50%;
         background-repeat: no-repeat;
+    }
+
+    .main-container {
+        margin-top: 50px;
     }
 </style>
 
-<?php while ( have_posts() ) : the_post(); ?>
+<div class="container-fluid main-container">
 
+<?php while ( have_posts() ) : the_post(); ?>
     <div class="row">
         <div class="col-md-5 col-md-offset-1">
             <?php the_content(); ?>
@@ -26,8 +31,9 @@
             <div class="text-center" style="padding-top: 10px"><?php pll_e('Contact me'); ?>:<br>ania@coralnotes.com</div>
         </div>
     </div>
-
 <?php endwhile; ?>
+
+</div>
 
 <?php get_footer(); ?>
 

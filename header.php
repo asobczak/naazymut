@@ -40,7 +40,7 @@
           <?php
             wp_nav_menu( array(
               'theme_location' => 'main-menu',
-	      'depth' => 2,
+	          'depth' => 2,
               'container' => false,
               'menu_class' => 'nav navbar-nav navbar-right',
               'walker' => new wp_bootstrap_navwalker()

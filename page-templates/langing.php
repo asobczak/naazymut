@@ -2,24 +2,17 @@
 
 <?php get_header(); ?>
 
-<style>
-	.navbar-naazymut {
-    		margin-bottom: 0px;
-	}
-
-        img.cover {
-            width: 100%;
-        }
-</style>
-
 <?php while ( have_posts() ) : the_post(); ?>
+
+    <style>
+        img.paralax {
+            margin-top: -30vh;
+        }
+    </style>
 
 <div class="container-fluid">
     <div class="row">
-        <img class="cover" src="<?php echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0]; ?>">
-    </div>
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12" style="padding: 0px;">
             <?php the_content(); ?>
         </div>
     </div>
