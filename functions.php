@@ -97,6 +97,18 @@ function shape_widgets_init() {
 }
 add_action( 'widgets_init', 'shape_widgets_init' );
 
+function front_page_widget_init() {
+	register_sidebar( array(
+		'name' => __( 'Front page widget area', 'shape' ),
+		'id' => 'frontpage-widget',
+		'before_widget' => '<aside id="%1$s" class="front-page-widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<p class="widget-title">',
+		'after_title' => '</p>',
+	) );
+}
+add_action( 'widgets_init', 'front_page_widget_init' );
+
 function naazymut_logo_customizer( $wp_customize ) {
 	$wp_customize->add_section( 'naazymut_logo_section' , array(
 		'title'       => __( 'Logo', 'naazymut' ),
@@ -118,4 +130,8 @@ add_action( 'customize_register', 'naazymut_logo_customizer' );
 pll_register_string('wpbootstrap', 'More');
 pll_register_string('wpbootstrap', 'Contact me');
 
+require_once('widgets/featured_page.php');
+add_action( 'widgets_init', function() {
+	register_widget( 'CoralFeaturedWidget' );
+});
 ?>
