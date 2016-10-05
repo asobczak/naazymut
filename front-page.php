@@ -79,7 +79,7 @@
 
 <hr>
 
-<p class="text-center" style="font-size: 14em; margin-top: 20px">Partnerzy: <a
+<p class="text-center" style="font-size: 14px; margin-top: 20px">Partnerzy: <a
 		title="Katalog-blogow.pl - Katalog Blogów Polskiej Blogosfery" href="http://katalog-blogow.pl/" target="_blank"
 		data-wpel-link="internal">Katalog-Blogow.pl</a></p>
 
