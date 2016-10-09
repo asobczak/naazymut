@@ -1,6 +1,6 @@
 <?php get_header(); ?>
             
-<div class='container-fluid'>
+<div class='container-fluid' style="padding-top: 20px;">
 
 <?php if (have_posts()) : ?>
 <?php

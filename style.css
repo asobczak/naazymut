@@ -39,6 +39,10 @@ h2 {
   color: #555;
 }
 
+.main-body h2 {
+  padding-top: 22px;
+}
+
 .bez-paralaxa h2 {
   font-size: 28px;
   margin-top: 40px;
@@ -48,6 +52,10 @@ h2 {
 .bez-paralaxa img {
   width: 100%;
   height: auto;
+}
+
+.site-logo {
+    margin-top: 5px;
 }
 
 .chart_div {
