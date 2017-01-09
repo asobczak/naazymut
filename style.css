@@ -98,9 +98,9 @@ p.menu {
   margin-left:14px;
 }
 
-.napis_naazymut {
-  width: 250px;
+.napis_coralnotes {
   height: 50px;
+  padding: 3px
 }
 
 li.red a {
@@ -277,8 +277,9 @@ ul.dash li {
   font-size: 20px;
 }
 
-.navbar-naazymut {
+.navbar-coralnotes {
   margin-bottom: 50px;
+  background-color: white;
 }
 
 .main-row {

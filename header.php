@@ -20,7 +20,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default navbar-naazymut navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-coralnotes navbar-fixed-top">
       <div class="container-fluid navbar-container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -31,7 +31,7 @@
           </button>
               <div class='site-logo'>
                 <a class="navbar-brand" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'>
-			<img src='<?php echo bloginfo('stylesheet_directory'); ?>/images/napis_coralnotes.png' class='napis_naazymut' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
+			<img src='<?php echo bloginfo('stylesheet_directory'); ?>/images/napis_coralnotes.png' class='napis_coralnotes' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'>
                 </a>
               </div>
         </div>
