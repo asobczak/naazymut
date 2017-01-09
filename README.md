@@ -1,1 +1,2 @@
-# naazymut
+# coralnotes.com
+Wordpress Theme
