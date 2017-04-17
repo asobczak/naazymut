@@ -21,6 +21,15 @@ function mycode_remove_sku_from_product_page( $boolean ) {
 	return $boolean;
 }
 
+function so_maybe_empty_cart( $valid ) {
+    if( ( WC()->cart->get_cart_contents_count() != 0) && $valid ){
+        WC()->cart->empty_cart();
+    }
+
+    return $valid;
+}
+add_filter( 'woocommerce_add_to_cart_validation', 'so_maybe_empty_cart', 10, 1 );
+
 function wpbootstrap_scripts_with_jquery()
 {
   wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ) );

@@ -1,4 +1,4 @@
-<?php /* Template Name: Margins */ ?>
+<?php /* Template Name: Margins 2 */ ?>
 
 <?php get_header(); ?>
 
