@@ -110,7 +110,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
        * property is NOT null we apply it as the class name for the glyphicon.
        */
       if ( ! empty( $item->attr_title ) ) {
-        $item_output .= '<a'. $attributes .'><span class="glyphicon ' . esc_attr( $item->attr_title ) . '"></span>';
+        $item_output .= '<a'. $attributes .'><span class="fa fa-lg ' . esc_attr( $item->attr_title ) . '"></span>';
       } else {
         $item_output .= '<a'. $attributes .'>';
         $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;

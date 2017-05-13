@@ -13,8 +13,10 @@
 
     <?php wp_enqueue_style("bootstrap", "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"); ?>
     <?php wp_enqueue_style("font", "https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext"); ?>
-    <?php wp_enqueue_style('main', get_template_directory_uri() . '/style.css?v='.time(), array("bootstrap", "font")); ?> 
-    
+    <?php wp_enqueue_style('main', get_template_directory_uri() . '/style.css?v='.time(), array("bootstrap", "font")); ?>
+    <?php wp_enqueue_style('font-awesome', get_template_directory_uri() . "/lib/font-awesome-4.7.0/css/font-awesome.min.css", array()); ?>
+
+
     <?php wp_head(); ?>
     <title><?php wp_title('|', true, 'right'); ?></title>
   </head>

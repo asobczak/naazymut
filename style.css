@@ -21,7 +21,7 @@ body {
   font-family: 'Roboto', sans-serif;
   padding: 0px;
   padding-top: 50px;
-  color: #777;
+  color: #000;
   font-size: 16px;
 }
 
@@ -296,21 +296,6 @@ ul.dash li {
   float: left;
 }
 
-.mail {
-  background-image: url(/wp-content/themes/wpbootstrap/images/mail-icon.svg);
-}
-
-.instagram {
-  background-image: url(/wp-content/themes/wpbootstrap/images/instagram.svg);
-}
-
-.facebook {
-  background-image: url(/wp-content/themes/wpbootstrap/images/facebook_logo.svg);
-}
-
-.rss {
-  background-image: url(/wp-content/themes/wpbootstrap/images/rss.svg);
-}
 
 @media (max-width: 767px) {
   .row {
@@ -485,4 +470,11 @@ footer {
 .front-page-widget img {
   width: 100%;
   height: auto;
+}
+
+aside.subscribe-form {
+  max-width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

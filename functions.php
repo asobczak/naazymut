@@ -21,15 +21,6 @@ function mycode_remove_sku_from_product_page( $boolean ) {
 	return $boolean;
 }
 
-function so_maybe_empty_cart( $valid ) {
-    if( ( WC()->cart->get_cart_contents_count() != 0) && $valid ){
-        WC()->cart->empty_cart();
-    }
-
-    return $valid;
-}
-add_filter( 'woocommerce_add_to_cart_validation', 'so_maybe_empty_cart', 10, 1 );
-
 function wpbootstrap_scripts_with_jquery()
 {
   wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/bootstrap/js/bootstrap.js', array( 'jquery' ) );
@@ -37,6 +28,10 @@ function wpbootstrap_scripts_with_jquery()
   
   wp_register_script( 'scroll-back-to-top', get_template_directory_uri() . '/js/scroll-back-to-top.js', array( 'jquery' ) );
   wp_enqueue_script( 'scroll-back-to-top' );
+
+
+  wp_register_script( 'main-js', get_template_directory_uri() . '/js/main.js', array( 'jquery' ) );
+  wp_enqueue_script( 'main-js' );
 }
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
